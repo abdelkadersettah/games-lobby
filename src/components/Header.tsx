@@ -13,7 +13,7 @@ const Header = async (props: Props) => {
       data-testid="header"
       className="dark:bg-background bg-zinc-100 py-4 px-6 border-b shadow-[0_1px_4px_-2px]"
     >
-      <nav className="page-width-padding flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
           href={'/'}
           className="font-bold text-2xl text-transparent  bg-gradient-to-r from-primary to-secondary-foreground bg-clip-text"

@@ -23,3 +23,19 @@ interface GameImage {
     src: string;
   };
 }
+export interface GamesDto {
+  items: Array<GameItem>;
+  count: number;
+  previousPage: number | null;
+  nextPage: number | null;
+}
+export interface GameItem {
+  type: string;
+  id: string;
+  platformId: string;
+  gameText: string;
+  provider: string;
+  provider_slug: string;
+  image: GameImage;
+  slug: string;
+}

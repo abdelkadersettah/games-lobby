@@ -2,7 +2,7 @@ type Props = {};
 
 function Loader({}: Props) {
   return (
-    <div className="absolute bg-white inset-0 bg-opacity-60 z-10 flex items-center justify-center">
+    <div className="absolute bg-black/50 inset-0 bg-opacity-60 z-10 flex items-center justify-center">
       <div className="flex items-center">
         <svg
           className="animate-spin h-12 w-12 text-gray-800"

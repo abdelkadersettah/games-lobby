@@ -3,7 +3,9 @@ import { notFound } from 'next/navigation';
 
 export async function fetchCategoryById(id: string): Promise<GamesMenu> {
   try {
-    const response = await fetch(`${process.env.NEXT_APP_URL}/api/menu/${id}`);
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_APP_URL}/api/menu/${id}`
+    );
     if (!response.ok) notFound();
     const result = await response.json();
     return result.data;

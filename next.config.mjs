@@ -8,6 +8,15 @@ const nextConfig = {
           'cdn-pika-production-cdn-bucket.s3.eu-central-1.amazonaws.com',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cloudinary.pikakasino.com',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
     ],
   },
 };

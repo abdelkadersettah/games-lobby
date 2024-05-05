@@ -1,10 +1,17 @@
-import Link from 'next/link';
+import Games from '@/components/Games';
+import Search from '@/components/ui/search';
 
-export default function Home() {
+type Props = {
+  params: { slug: string; locale: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function Home({ params, searchParams }: Props) {
   return (
-    <div>
-      <h1>Home</h1>
-      <Link href="/about">About</Link>
-    </div>
+    <section>
+      <h1>Welcome to the World&apos;s Game!</h1>
+      <Search />
+      <Games searchParams={searchParams} />
+    </section>
   );
 }

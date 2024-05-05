@@ -7,10 +7,7 @@ type Params = {
 };
 
 export async function GET(request: NextRequest, { params }: Params) {
-  console.log(params);
-
   try {
-    const id = params.id;
     const response = await fetch(`${process.env.DB_URI}/en/config`);
     const result = await response.json();
     const data = (result.gamesOfTheMonth as Array<GamesMenu>).filter(

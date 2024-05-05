@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="grid min-h-screen grid-rows-[auto_1fr_auto] h-full">
             <Header />
             <main className="py-6 h-full px-6 ">
-              <div className="page-width-padding">{children}</div>
+              <div className="max-w-7xl mx-auto ">{children}</div>
             </main>
             <Footer />
           </div>
